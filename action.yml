@@ -71,7 +71,7 @@ runs:
       shell: sh
       run: |
         if git status -s "${{ inputs.output_path }}" | grep -qE '(M|\?\?)'; then
-          git config --global user.email "profilecli-action@do-not-reply.com"
+          git config --global user.email "botify-labs-profilecli-action@users.noreply.github.com"
           git config --global user.name "profilecli-action"
           PROFILECLI_ACTION_BRANCH=profilecli-action/generate-profile-$(date +%s%3N)
           git switch -c "$PROFILECLI_ACTION_BRANCH"

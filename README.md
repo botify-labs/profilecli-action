@@ -1,6 +1,7 @@
 # profilecli-action
 
-A GitHub Action to download and commit a PGO profile using `profilecli`.
+A GitHub Action to download and commit a PGO profile using
+[profilecli](https://grafana.com/docs/pyroscope/latest/view-and-analyze-profile-data/profile-cli/).
 
 ## Prerequisites
 

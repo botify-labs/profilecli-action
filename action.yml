@@ -3,35 +3,35 @@ description: Download PGO profile
 
 inputs:
   endpoint:
-    description: Endpoint to retrieve the profile from
+    description: Pyroscope API endpoint to fetch profiling data.
     required: true
   query:
-    description: Pyroscope query
+    description: Pyroscope query used to filter profiling data.
     required: true
   username:
-    description: ""
+    description: Username for authentication with the profile endpoint.
     required: true
   password:
-    description: ""
+    description: Password for authentication with the profile endpoint.
     required: true
   output_path:
-    description: Path to the output file
+    description: Path to the output file where the profile will be saved
     required: false
     default: default.pgo
   range_from:
-    description: ""
+    description: Start time for the profiling range (e.g., 'now-24h').
     required: false
     default: now-24h
   range_to:
-    description: ""
+    description: End time for the profiling range (e.g., 'now').
     required: false
     default: now
   profile_type:
-    description: ""
+    description: Type of profile to fetch.
     required: false
     default: process_cpu:samples:count:cpu:nanoseconds
   profilecli_version:
-    description: ""
+    description: "Version of profilecli to use."
     required: false
     default: "1.1.5"
 

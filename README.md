@@ -6,7 +6,7 @@ A GitHub Action to download and commit a PGO profile using
 ## Prerequisites
 
 - On your repository, go to Settings > Actions > General and check
-  `Go to Allow GitHub Actions to create and approve pull requests`
+  `Allow GitHub Actions to create and approve pull requests`
 
 - `GH_TOKEN` must be set in your workflow environment:
   ```yaml
